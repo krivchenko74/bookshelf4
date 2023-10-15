@@ -9,6 +9,8 @@ $(document).ready(function() {
                 alert('успех')
                 document.querySelector('.confirm p').innerText = 'Ответы отправлены';
                 document.querySelector('.confirm').classList.add('yes')
+        }).fail(function (){
+            alert('Произошла ошибка')
         })
         return false;
     })
